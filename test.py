@@ -14,14 +14,14 @@ ydck1.print_static_route()
 ydck1.add_static_route("13.11.11.0",24," 100.100.100.100")
 print ("added new route 13.11.11.0/24")
 ydck1.print_static_route()
-if (ydck1.check_if_static_route_exists("13.11.11.0",24," 100.100.100.100")):
+if (ydck1.check_if_static_route_exists("13.11.11.0",24,"100.100.100.100")):
     print ("13.11.11.0/24 exists")
 else:
     print ("13.11.11.0/24 does not exist")
 ydck1.delete_static_route("13.11.11.0",24," 100.100.100.100")
 print ("deleted route 13.11.11.0/24")
 ydck1.print_static_route()
-if (ydck1.check_if_static_route_exists("13.11.11.0",24," 100.100.100.100")):
+if (ydck1.check_if_static_route_exists("13.11.11.0",24,"100.100.100.100")):
     print ("13.11.11.0/24 exists")
 else:
     print ("13.11.11.0/24 does not exist")
