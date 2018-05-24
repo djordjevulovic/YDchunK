@@ -11,7 +11,7 @@ from ydk.models.ietf.iana_if_type import SoftwareloopbackIdentity
 
 from ydk.models.cisco_ios_xr import Cisco_IOS_XR_ipv4_bgp_datatypes as xr_ipv4_bgp_datatypes
 from ydk.services.crud_service import CRUDService
-from ydk.providers.netconf_provider import NetconfServiceProvider
+from ydk.providers import NetconfServiceProvider
 import ydk.types
 from  ydk.models.ietf.ietf_interfaces import InterfaceTypeIdentity
 

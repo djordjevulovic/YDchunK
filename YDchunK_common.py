@@ -1,5 +1,5 @@
 from ydk.services.crud_service import CRUDService
-from ydk.providers.netconf_provider import NetconfServiceProvider
+from ydk.providers import NetconfServiceProvider
 
 class YDchunK_NETCONF_Device:
 
