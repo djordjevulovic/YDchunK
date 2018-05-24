@@ -30,6 +30,9 @@ class YDchunK_IOSXR_Native_static_dvulovic(YDchunK_IOSXR_Native):
 
         router_static = self.xr.ydk_crud.read(self.xr.ydk_provider, filter)
 
+        if not router_static.default_vrf:
+            return
+
         for vrf_prefix in router_static.default_vrf.address_family.vrfipv4.vrf_unicast.vrf_prefixes.vrf_prefix:
             print(vrf_prefix.prefix + "/" + str(vrf_prefix.prefix_length))
 
